@@ -1,0 +1,310 @@
+{
+  "version": 1,
+  "author": "Josue Samuel Paño Mamani",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": 159.95,
+      "left": 166.75,
+      "attrs": { "env": "micropython-20241129-v1.24.1" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_volt",
+      "top": -78.1,
+      "left": -441.8,
+      "attrs": { "value": "10000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 158.4,
+      "left": -250.15,
+      "rotate": 90,
+      "attrs": { "value": "4700" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 282.35,
+      "left": -182.4,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_amp",
+      "top": -78.1,
+      "left": -345.8,
+      "attrs": { "value": "10000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r5",
+      "top": 311.15,
+      "left": -278.4,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r6",
+      "top": 320.75,
+      "left": -201.6,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "ramp",
+      "top": 368.75,
+      "left": -76.8,
+      "attrs": { "value": "10" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 51.95,
+      "left": -57.6,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_amp1",
+      "top": -78.1,
+      "left": -211.4,
+      "attrs": { "value": "10000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 109.55,
+      "left": -57.6,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 175.94,
+      "left": 518.63,
+      "attrs": { "i2cAddress": "0x3c" }
+    },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -201.3, "left": 493.8, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 451.1,
+      "left": 214.7,
+      "rotate": 90,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 431.9,
+      "left": 329.9,
+      "rotate": 90,
+      "attrs": { "color": "blue", "xray": "1" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r1",
+      "top": -53.65,
+      "left": 288,
+      "attrs": { "value": "2000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r2",
+      "top": -53.65,
+      "left": 9.6,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r3",
+      "top": -53.65,
+      "left": 76.8,
+      "attrs": { "value": "1000" }
+    },
+    { "type": "wokwi-gnd", "id": "dac_gnd1", "top": -28.8, "left": 345, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r4",
+      "top": -53.65,
+      "left": 144,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r5",
+      "top": -4.8,
+      "left": -19.75,
+      "rotate": 90,
+      "attrs": { "value": "2000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r6",
+      "top": -53.65,
+      "left": 211.2,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r7",
+      "top": -91.2,
+      "left": -19.75,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r9",
+      "top": -158.4,
+      "left": -19.75,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r10",
+      "top": -292.8,
+      "left": -19.75,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r12",
+      "top": -225.6,
+      "left": -19.75,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r13",
+      "top": -4.8,
+      "left": 47.45,
+      "rotate": 90,
+      "attrs": { "value": "2000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r14",
+      "top": -4.8,
+      "left": 114.65,
+      "rotate": 90,
+      "attrs": { "value": "2000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r15",
+      "top": -4.8,
+      "left": 181.85,
+      "rotate": 90,
+      "attrs": { "value": "2000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r16",
+      "top": -4.8,
+      "left": 249.05,
+      "rotate": 90,
+      "attrs": { "value": "2000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r17",
+      "top": -120.55,
+      "left": -59,
+      "rotate": 180,
+      "attrs": { "value": "2000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r18",
+      "top": -187.75,
+      "left": -59,
+      "rotate": 180,
+      "attrs": { "value": "2000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r19",
+      "top": -322.15,
+      "left": -59,
+      "rotate": 180,
+      "attrs": { "value": "2000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dac_r20",
+      "top": -254.95,
+      "left": -59,
+      "rotate": 180,
+      "attrs": { "value": "2000" }
+    }
+  ],
+  "connections": [
+    [ "pico:3V3", "pot_volt:VCC", "red", [ "h29.11", "v-124.8", "h-530", "v172.8", "h-74" ] ],
+    [ "pico:GND.4", "pot_volt:GND", "black", [ "v268.84", "h-523.2" ] ],
+    [ "pot_volt:SIG", "r3:1", "orange", [ "v76.8", "h244.4", "v-107.2" ] ],
+    [ "r3:2", "r4:1", "orange", [ "v10", "h0" ] ],
+    [ "r4:2", "pico:GND.4", "black", [ "h20", "v60" ] ],
+    [ "pico:GP26", "r3:1", "green", [ "h86.71", "v-180", "h-172.8", "v159.2" ] ],
+    [ "pico:3V3", "pot_amp:VCC", "red", [ "h29.11", "v-124.8", "h-412.8", "v163.2", "h-56.8" ] ],
+    [ "pico:GND.4", "pot_amp:GND", "black", [ "v268.84", "h-403.2" ] ],
+    [ "pot_amp:SIG", "r5:1", "orange", [ "h-0.4", "v130", "h122.4" ] ],
+    [ "r5:2", "r6:1", "orange", [ "h10" ] ],
+    [ "r6:2", "ramp:1", "green", [ "h37.2", "v48" ] ],
+    [ "ramp:2", "pico:GND.4", "black", [ "h20", "v3.55", "h26.8", "v-105.64" ] ],
+    [ "pico:GP27", "r5:1", "green", [ "h67.51", "v320", "h-614.4", "v-147.2" ] ],
+    [ "pico:GND.4", "r3:2", "black", [ "v0.04", "h-115.2", "v-38.8" ] ],
+    [ "pico:3V3", "r1:2", "red", [ "h29.11", "v-105.6", "h-134.4", "v-48" ] ],
+    [ "pot_amp1:VCC", "r1:1", "red", [ "v0" ] ],
+    [ "pico:GND.1", "r2:2", "black", [ "h-67.2", "v-28.8" ] ],
+    [ "r2:1", "pot_amp1:SIG", "orange", [ "v67.2", "h-105.2" ] ],
+    [ "r2:1", "pico:GP28", "green", [ "v9.6", "h355.2", "v124.8" ] ],
+    [ "oled1:VCC", "pico:VBUS", "red", [ "v0" ] ],
+    [ "oled1:GND", "pico:GND.8", "black", [ "v0" ] ],
+    [ "oled1:SCL", "pico:GP19", "green", [ "v-19.2", "h67.5", "v153.56" ] ],
+    [ "oled1:SDA", "pico:GP18", "green", [ "v-38.4", "h67.27", "v182.36" ] ],
+    [ "pico:VBUS", "dht1:VCC", "red", [ "h0" ] ],
+    [ "pico:GP0", "dht1:SDA", "green", [ "h0", "v-115.2", "h240", "v86.4", "h76.8" ] ],
+    [ "dht1:GND", "pico:GND.8", "black", [ "v0" ] ],
+    [ "pico:GP14", "btn2:2.l", "blue", [ "h-28.8", "v28.84", "h115.2" ] ],
+    [ "pico:GP15", "btn1:2.l", "green", [ "h-38.4", "v9.64", "h57.6" ] ],
+    [ "pico:GND.5", "btn2:1.r", "black", [ "h182.71", "v201.64", "h-48" ] ],
+    [ "btn1:1.r", "pico:GND.5", "black", [ "v29", "h163.2", "v-201.64" ] ],
+    [ "dac_r2:2", "dac_r3:1", "green", [] ],
+    [ "dac_r4:1", "dac_r3:2", "green", [] ],
+    [ "dac_r4:2", "dac_r6:1", "green", [] ],
+    [ "dac_r15:1", "dac_r6:1", "green", [] ],
+    [ "dac_r14:1", "dac_r4:1", "green", [] ],
+    [ "dac_r13:1", "dac_r3:1", "green", [] ],
+    [ "dac_r6:2", "dac_r16:1", "green", [] ],
+    [ "dac_r1:1", "dac_r6:2", "green", [] ],
+    [ "dac_r1:2", "dac_gnd1:GND", "green", [] ],
+    [ "dac_r16:2", "pico:GP2", "green", [] ],
+    [ "pico:GP3", "dac_r15:2", "green", [] ],
+    [ "pico:GP4", "dac_r14:2", "green", [] ],
+    [ "pico:GP5", "dac_r13:2", "green", [] ],
+    [ "pico:GP6", "dac_r5:2", "green", [] ],
+    [ "dac_r2:1", "dac_r7:2", "green", [] ],
+    [ "dac_r5:1", "dac_r2:1", "green", [] ],
+    [ "dac_r7:1", "dac_r9:2", "green", [] ],
+    [ "dac_r9:1", "dac_r12:2", "green", [] ],
+    [ "dac_r12:1", "dac_r10:2", "green", [] ],
+    [ "dac_r17:1", "dac_r7:1", "green", [] ],
+    [ "dac_r18:1", "dac_r9:1", "green", [] ],
+    [ "dac_r20:1", "dac_r12:1", "green", [] ],
+    [ "dac_r19:1", "dac_r10:1", "green", [] ],
+    [ "pico:GP7", "dac_r17:2", "green", [] ],
+    [ "pico:GP8", "dac_r18:2", "green", [] ],
+    [ "pico:GP9", "dac_r20:2", "green", [] ],
+    [ "pico:GP10", "dac_r19:2", "green", [] ]
+  ],
+  "serialMonitor": { "display": "plotter" },
+  "dependencies": {}
+}
